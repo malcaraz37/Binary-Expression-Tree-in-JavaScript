@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árbol de Expresiones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Árbol de Expresiones</h1>
+
+    <div class="seccion">
+        <h2>Expresión Normal (Infijo)</h2>
+        <input type="text" id="expresionInfijo" placeholder="Ejemplo: 4*3-5+3/6">
+        <button onclick="procesarExpresionInfijo()">Resolver</button>
+        <div id="resultadoInfijo"></div>
+    </div>
+
+    <div class="seccion">
+        <h2>Expresión Preorden</h2>
+        <input type="text" id="expresionPreorden" placeholder="Ejemplo: +*-4326">
+        <button onclick="procesarExpresionPreorden()">Resolver</button>
+        <div id="resultadoPreorden"></div>
+    </div>
+
+    <div class="seccion">
+        <h2>Expresión Postorden</h2>
+        <input type="text" id="expresionPostorden" placeholder="Ejemplo: 432*6/-">
+        <button onclick="procesarExpresionPostorden()">Resolver</button>
+        <div id="resultadoPostorden"></div>
+    </div>
+
+    <script src="estructura.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
